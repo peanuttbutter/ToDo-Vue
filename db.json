@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "n32F",
+      "status": "inProgress",
+      "title": "Сходить в магазин",
+      "description": "купить молоко",
+      "dueDate": "",
+      "isCompleted": false
+    },
+    {
+      "id": "AAqW",
+      "status": "todo",
+      "title": "Прочитать документацию",
+      "description": "открыть и прочитать",
+      "dueDate": "2024-11-29",
+      "isCompleted": false
+    },
+    {
+      "id": "p4In",
+      "status": "done",
+      "title": "Сделать английский",
+      "description": "перевод статьи",
+      "dueDate": "2024-11-28",
+      "isCompleted": true
+    },
+    {
+      "id": "zdrp",
+      "status": "todo",
+      "title": "Помыть посуду",
+      "description": "без комментариев",
+      "dueDate": "2024-11-24",
+      "isCompleted": false
+    }
+  ]
+}
