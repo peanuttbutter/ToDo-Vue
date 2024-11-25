@@ -20,13 +20,13 @@ const columns = [
   { status: 'done', title: 'Выполнено', color: '#e4e6e6' },
 ]
 
-const isMobile = ref(window.innerWidth <= 768)
+const isMobile = ref(window.innerWidth <= 576)
 const columnWidth = ref(isMobile.value ? 140 : 360)
 const columnSpacing = ref(isMobile.value ? 5 : 40)
 const headerHeight = ref(50)
 const taskHeight = ref(isMobile.value ? 60 : 80)
 const taskSpacing = ref(isMobile.value ? 8 : 20)
-const titleFontSize = ref(isMobile.value ? 10 : 16)
+const titleFontSize = ref(isMobile.value ? 10 : 18)
 const dueDateFontSize = ref(isMobile.value ? 8 : 14)
 const columnHeaderFontSize = ref(isMobile.value ? 14 : 22)
 const taskPadding = ref(isMobile.value ? 5 : 10)
@@ -37,7 +37,7 @@ const updateDimensions = () => {
   columnSpacing.value = isMobile.value ? 5 : 40
   taskHeight.value = isMobile.value ? 60 : 80
   taskSpacing.value = isMobile.value ? 8 : 20
-  titleFontSize.value = isMobile.value ? 10 : 16
+  titleFontSize.value = isMobile.value ? 10 : 18
   dueDateFontSize.value = isMobile.value ? 8 : 14
   columnHeaderFontSize.value = isMobile.value ? 14 : 22
   taskPadding.value = isMobile.value ? 5 : 10
@@ -145,6 +145,7 @@ function drawColumn(column, index) {
     left: left + columnWidth.value / 2,
     top: 10,
     fontSize: columnHeaderFontSize.value,
+    fontFamily: 'sans-serif',
     fontWeight: 'bold',
     selectable: false,
     originX: 'center',
@@ -180,7 +181,9 @@ function drawTask(task) {
 
   const titleText = new fabric.Textbox(task.title, {
     fontSize: titleFontSize.value,
+    fontFamily: 'sans-serif',
     fontWeight: '600',
+    fill: '#2d3333',
     left: taskPadding.value,
     top: taskPadding.value,
     width: columnWidth.value - 40,
@@ -203,7 +206,8 @@ function drawTask(task) {
       originX: 'left',
       originY: 'top',
       textAlign: 'center',
-      fill: task.status === 'done' ? 'gray' : 'black',
+      fill: task.status === 'done' ? 'gray' : '#2d3333',
+      fontWeight: '500',
     },
   )
 

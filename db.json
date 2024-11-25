@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": "n32F",
-      "status": "inProgress",
+      "status": "todo",
       "title": "Сходить в магазин",
       "description": "купить молоко",
       "dueDate": "",
@@ -10,7 +10,7 @@
     },
     {
       "id": "AAqW",
-      "status": "todo",
+      "status": "inProgress",
       "title": "Прочитать документацию",
       "description": "открыть и прочитать",
       "dueDate": "2024-11-29",

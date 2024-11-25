@@ -1,5 +1,7 @@
 <template>
-  <li class="p-4 bg-gray-100 rounded-lg shadow-sm flex items-center justify-between">
+  <li
+    class="p-4 bg-gray-100 rounded-lg shadow-sm flex items-center justify-between max-w-7xl m-auto"
+  >
     <div>
       <h3 :class="{ 'line-through text-gray-500': task.isCompleted }" class="text-lg font-semibold">
         {{ task.title }}
