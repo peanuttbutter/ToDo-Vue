@@ -5,13 +5,13 @@
 1. Cклонируйте репозиторий:
    
    ```sh
-   git clone <https://github.com/peanuttbutter/ToDo-Vue.git>; cd <ToDo-Vue/>
+   git clone https://github.com/peanuttbutter/ToDo-Vue.git; cd ToDo-Vue/ 
    ```
 
 2. Установите все необходимые зависимости, указанные в `package.json`:
 
    ```sh
-   npm install
+   npm install 
    ```
 
 
